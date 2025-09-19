@@ -19,12 +19,14 @@ A simple animated web page that counts how long two people have been in love tog
 ## Customization
 
 * The names of both lovers can be changed in the environment variable in the docker-compose.yml file
-* The start time can either be directly (recommenden) set in the environment variable in the docker-compose.yml file
+* The start time can either be directly (recommenden) set in the environment variable in the docker-compose.yml file or in the input field on the website
 * Changes made to the start time directly in the deployed website is stored in **localStorage**
-* Aswell the port on wich the website should run is defined int the docker-compose.yml file     
+* Aswell the port on wich the website should run is defined in the docker-compose.yml file
+```   
     ports:
         # HOST_PORT:CONTAINER_PORT
       - "8083:80"
+``` 
 
 ---
 
