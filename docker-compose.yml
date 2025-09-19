@@ -1,0 +1,11 @@
+services:
+  love-counter:
+    build: .
+    environment:
+      - LOVER_ONE=Alice
+      - LOVER_TWO=Bob
+      - START_DATE=2020-01-01T12:00
+    container_name: love-counter
+    ports:
+      - "8083:80"
+    restart: unless-stopped
