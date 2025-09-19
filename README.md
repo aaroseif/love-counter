@@ -24,7 +24,7 @@ A simple animated web page that counts how long two people have been in love tog
 * Aswell the port on wich the website should run is defined in the docker-compose.yml file
 ```   
     ports:
-        # HOST_PORT:CONTAINER_PORT
+    HOST_PORT:PORT_INSIDE_CONTAINER (leave default)
       - "8083:80"
 ``` 
 
